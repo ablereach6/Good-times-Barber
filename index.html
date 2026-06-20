@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Times Barbershop - Victorville</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Good Times Barber</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Good Times Barbershop</h1>
+            <p>Two barbershops on Mojave Dr, serving Victorville with clean fades, sharp line-ups, and good vibes.</p>
+            <div class="hero-buttons">
+                <a href="#booking-1" class="btn btn-primary">Book Mojave Dr #5</a>
+                <a href="#booking-2" class="btn btn-secondary">Book Mojave Dr J</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Clean Fades</h3>
+                    <p>Precision fades with sharp edges and smooth transitions. We perfect every detail.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Sharp Line-ups</h3>
+                    <p>Clean, crisp line-ups that frame your face perfectly. Barber precision at its finest.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Full Grooming</h3>
+                    <p>Complete grooming services including beard trims, shaping, and styling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <h2>Our Locations</h2>
+            <div class="locations-grid">
+                <!-- Location 1 -->
+                <div class="location-card" id="booking-1">
+                    <h3>Mojave Dr #5</h3>
+                    <p><strong>Address:</strong> Mojave Dr #5, Victorville, CA</p>
+                    <p><strong>Hours:</strong></p>
+                    <ul>
+                        <li>Monday - Friday: 9:00 AM - 7:00 PM</li>
+                        <li>Saturday: 9:00 AM - 6:00 PM</li>
+                        <li>Sunday: 11:00 AM - 5:00 PM</li>
+                    </ul>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <button class="btn btn-primary" onclick="bookAppointment('Mojave Dr #5')">Book Appointment</button>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="location-card" id="booking-2">
+                    <h3>Mojave Dr J</h3>
+                    <p><strong>Address:</strong> Mojave Dr J, Victorville, CA</p>
+                    <p><strong>Hours:</strong></p>
+                    <ul>
+                        <li>Monday - Friday: 10:00 AM - 8:00 PM</li>
+                        <li>Saturday: 10:00 AM - 7:00 PM</li>
+                        <li>Sunday: 12:00 PM - 6:00 PM</li>
+                    </ul>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567891">(123) 456-7891</a></p>
+                    <button class="btn btn-primary" onclick="bookAppointment('Mojave Dr J')">Book Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Good Times Barbershop. All rights reserved.</p>
+            <p>Serving Victorville with excellence and good vibes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
